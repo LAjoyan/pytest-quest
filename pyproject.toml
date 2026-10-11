@@ -1,6 +1,17 @@
-# PyTest Quest settings. The dungeon isn't installed as a package: pytest finds
-# it through `pythonpath` below, which lets the grader swap in monster copies.
+[project]
+name = "pytest-quest"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = []
 
+[dependency-groups]
+dev = [
+    "pytest==9.1.1",
+    "pytest-cov==7.1.0",
+    "pytest-mock==3.16.0",
+    "pytest-xdist==3.8.0",
+    "pytest-random-order==1.2.0",
+]
 [tool.pytest.ini_options]
 minversion = "8.0"
 testpaths = ["tests"]

@@ -4,7 +4,7 @@
 
 ### From zero to hero, one green pipeline at a time
 
-[![Build](../../actions/workflows/build.yml/badge.svg)](../../actions/workflows/build.yml)
+[![Build](https://github.com/LAjoyan/pytest-quest/actions/workflows/build.yml/badge.svg)](https://github.com/LAjoyan/pytest-quest/actions/workflows/build.yml)
 
 **The badge above is the Final Boss. Right now it's red. Your job is to make it green.**
 
@@ -26,16 +26,16 @@ Your tests must be sharp enough to notice every one.
 
 | Lvl | Quest | You'll learn | XP | Status |
 |:--:|---|---|--:|---|
-| 00 | [The Gate](tests/level_00) | running pytest, reading a failure | 50 | [![Level 00](../../actions/workflows/level-00.yml/badge.svg)](../../actions/workflows/level-00.yml) |
-| 01 | [First Blood](tests/level_01) | test functions, `assert` | 100 | [![Level 01](../../actions/workflows/level-01.yml/badge.svg)](../../actions/workflows/level-01.yml) |
-| 02 | [Keen Eye](tests/level_02) | `approx`, comparing collections, `None` | 100 | [![Level 02](../../actions/workflows/level-02.yml/badge.svg)](../../actions/workflows/level-02.yml) |
-| 03 | [When Things Go Wrong](tests/level_03) | `pytest.raises`, `match=`, `pytest.warns` | 150 | [![Level 03](../../actions/workflows/level-03.yml/badge.svg)](../../actions/workflows/level-03.yml) |
-| 04 | [Many Faces](tests/level_04) | `@pytest.mark.parametrize` | 150 | [![Level 04](../../actions/workflows/level-04.yml/badge.svg)](../../actions/workflows/level-04.yml) |
-| 05 | [Gear Up](tests/level_05) | fixtures, `conftest.py` | 200 | [![Level 05](../../actions/workflows/level-05.yml/badge.svg)](../../actions/workflows/level-05.yml) |
-| 06 | [Tools of the Trade](tests/level_06) | `tmp_path`, `capsys`, `monkeypatch` | 200 | [![Level 06](../../actions/workflows/level-06.yml/badge.svg)](../../actions/workflows/level-06.yml) |
-| 07 | [Marked](tests/level_07) | custom marks, `skipif`, strict `xfail`, `-m` | 200 | [![Level 07](../../actions/workflows/level-07.yml/badge.svg)](../../actions/workflows/level-07.yml) |
-| 08 | [Smoke and Mirrors](tests/level_08) | mocking, where to patch, `side_effect` | 250 | [![Level 08](../../actions/workflows/level-08.yml/badge.svg)](../../actions/workflows/level-08.yml) |
-| 09 | [No Stone Unturned](tests/level_09) | branch coverage, and its limits | 250 | [![Level 09](../../actions/workflows/level-09.yml/badge.svg)](../../actions/workflows/level-09.yml) |
+| 00 | [The Gate](tests/level_00) | running pytest, reading a failure | 50 | [![Level 00](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-00.yml/badge.svg)](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-00.yml) |
+| 01 | [First Blood](tests/level_01) | test functions, `assert` | 100 | [![Level 01](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-01.yml/badge.svg)](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-01.yml) |
+| 02 | [Keen Eye](tests/level_02) | `approx`, comparing collections, `None` | 100 | [![Level 02](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-02.yml/badge.svg)](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-02.yml) |
+| 03 | [When Things Go Wrong](tests/level_03) | `pytest.raises`, `match=`, `pytest.warns` | 150 | [![Level 03](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-03.yml/badge.svg)](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-03.yml) |
+| 04 | [Many Faces](tests/level_04) | `@pytest.mark.parametrize` | 150 | [![Level 04](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-04.yml/badge.svg)](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-04.yml) |
+| 05 | [Gear Up](tests/level_05) | fixtures, `conftest.py` | 200 | [![Level 05](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-05.yml/badge.svg)](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-05.yml) |
+| 06 | [Tools of the Trade](tests/level_06) | `tmp_path`, `capsys`, `monkeypatch` | 200 | [![Level 06](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-06.yml/badge.svg)](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-06.yml) |
+| 07 | [Marked](tests/level_07) | custom marks, `skipif`, strict `xfail`, `-m` | 200 | [![Level 07](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-07.yml/badge.svg)](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-07.yml) |
+| 08 | [Smoke and Mirrors](tests/level_08) | mocking, where to patch, `side_effect` | 250 | [![Level 08](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-08.yml/badge.svg)](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-08.yml) |
+| 09 | [No Stone Unturned](tests/level_09) | branch coverage, and its limits | 250 | [![Level 09](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-09.yml/badge.svg)](https://github.com/LAjoyan/pytest-quest/actions/workflows/level-09.yml) |
 | 🐉 | [The Final Boss](FINAL_BOSS.md) | test isolation, parallel runs, CI matrix | 500 | the badge at the top |
 
 ## How to play
