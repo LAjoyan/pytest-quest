@@ -32,8 +32,8 @@ def test_a_new_hero_gain_xp():
 
 def test_a_new_hero_take_damage():
     hero = Hero("Ada")
-    hero.take_damage(100)
-    assert hero.is_alive == False
+    hero.take_damage(200)
+    assert hero.hp == 0
 
 def test_a_new_hero_heal():
     hero = Hero("Ada")
