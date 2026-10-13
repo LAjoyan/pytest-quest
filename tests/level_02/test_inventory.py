@@ -34,12 +34,12 @@ def test_find_missing_item():
 
 def test_backpack_weight_names_and_dict():
     backpack = Inventory()
-    backpack.add(Item("potion", 0.1), quantity=2)
     backpack.add(Item("sword", 0.2))
+    backpack.add(Item("potion", 0.1), quantity=2)
 
     assert backpack.total_weight == pytest.approx(0.4)
     assert backpack.names() == ["potion", "sword"]
-    assert backpack.as_dict() == {"potion": 2, "sword": 1}
+    assert backpack.as_dict() == {"sword": 1, "potion": 2}
 
 
 
