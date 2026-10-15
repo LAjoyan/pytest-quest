@@ -19,9 +19,9 @@ def test_a_new_backpack_is_empty():
     assert backpack.names() == []
 
 
-def test_a_new_backpack_is_not_empty():
+def test_adding_an_item_to_backpack():
     backpack = Inventory(max_weight=50)
-    item = Item(name="Sword", weight=5.0, value=39)
+    item = Item(name="Sword", weight=5.0, value=40)
     backpack.add(item)
     assert backpack.names() == ["Sword"]
 
@@ -34,12 +34,12 @@ def test_find_missing_item():
 
 def test_backpack_weight_names_and_dict():
     backpack = Inventory()
-    backpack.add(Item("sword", 0.2))
-    backpack.add(Item("potion", 0.1), quantity=2)
+    backpack.add(Item("sword", 0.2, 7), quantity=2)
+    backpack.add(Item("potion", 0.1, 5), quantity=3)
 
-    assert backpack.total_weight == pytest.approx(0.4)
+    assert backpack.total_weight == pytest.approx(0.7)
     assert backpack.names() == ["potion", "sword"]
-    assert backpack.as_dict() == {"sword": 1, "potion": 2}
+    assert backpack.as_dict() == {"sword": 2, "potion": 3}
 
 
 
