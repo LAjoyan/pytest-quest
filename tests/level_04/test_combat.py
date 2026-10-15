@@ -18,18 +18,18 @@ from dungeon.combat import calculate_damage
     [
         pytest.param(10, 4, False, None, None, 6, id="normal_hit"),
         pytest.param(10, 4, True, None, None, 12, id="critical_hit"),
-        pytest.param(10, 4, False, "fire", "fire", 6, id="matching_target"),
+        pytest.param(9, 4, False, "fire", "fire", 7, id="matching_target"),
         pytest.param(2, 10, False, None, None, 1, id="always_deal_one_damage"),
         pytest.param(10, 4, False, "fire", "ice", 6, id="fire_and_ice_no_bonus"),
         pytest.param(5, 5, False, None, None, 1, id="tied_stats"),
     ],
 )
 def test_damage(attack, defense, critical, element, weakness, expected):
-    assert calculate_damage(attack, defense, critical=critical, element=None, weakness=None) == expected
+    assert calculate_damage(attack, defense, critical=critical, element=element, weakness=weakness) == expected
 
 @pytest.mark.parametrize(
     ("attack", "defense"),
-    [(-5, -4)],
+    [(-5, -4), (10, -4)],
 )
 def test_excpected(attack, defense):
 
