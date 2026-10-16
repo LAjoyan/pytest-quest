@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import os
+import shlex
 import subprocess
 import sys
 import tempfile
@@ -57,7 +58,7 @@ def run_pytest(
 
     cmd = [sys.executable, "-m", "pytest", *BASE_ARGS, *args]
     if src is not None:
-        cmd += ["-o", f"pythonpath={src}"]
+        cmd += ["-o", f"pythonpath={pythonpath_value(src)}"]
 
     with tempfile.TemporaryDirectory(prefix="pytest-quest-") as tmp:
         probe_file = Path(tmp) / "probe.json"
@@ -82,6 +83,16 @@ def run_pytest(
         if probe and probe_file.exists():
             data = json.loads(probe_file.read_text(encoding="utf-8"))
         return RunResult(done.returncode, done.stdout + done.stderr, data)
+
+
+def pythonpath_value(src: Path) -> str:
+    """`src` written so that pytest's `-o pythonpath=...` reads it back unchanged.
+
+    pytest splits that value with shlex, which eats backslashes and splits on
+    spaces: C:\\Users\\Anna Svensson\\... would arrive as two broken paths. Forward
+    slashes work on Windows too, and quoting keeps a space inside one path.
+    """
+    return shlex.quote(src.as_posix())
 
 
 def failure_excerpt(output: str, max_lines: int = 60) -> str:

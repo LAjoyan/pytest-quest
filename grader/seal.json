@@ -24,7 +24,7 @@
   "grader/plugins/probe.py": "15dcde356221aeae9fb9fd017c3ecdad918b2f846ce58e2bbca9365341991dc4",
   "grader/questlog.py": "2fcd1e00416d009293e09a63c15a6e633a83f17481065bdc5f7f369b095bf377",
   "grader/report.py": "268bf918c0bb15972ee3179d4a18a0a970c9e38771626ae4fa7ac89749a23d03",
-  "grader/runner.py": "79c3f60046a49813d2c604b2e7926df436ddf2f70d0e91af3140e52fbaa22440",
+  "grader/runner.py": "fc15c3ab8cd15683ecfb3b11fd70ea927fec290938c719276c43454f5120618a",
   "grader/seal.py": "19e411b91e3ac0d0db96459f8541873c99c727c3c485093e6c9a36119664b5b7",
   "src/dungeon/__init__.py": "ab566922e7f5277a60b64b8cd48cf4fa05f9f61e6c48e584355da48c995ef0da",
   "src/dungeon/bard.py": "9bc2e2a8383d743272de9b3ad50f77f58ffa2946d41742a248cf623ee7ac00c0",
